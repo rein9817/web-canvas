@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Whiteboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.2.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="title">
+            <h1>Web Canvas</h1>
+        </div>
+        
+        <div class="left">
+            <canvas id="colorPicker"></canvas>
+            <div class="toolbar">
+                
+                <div class="row">
+                    <label>brush size</label>
+                    <input type="range" id="brushSize" class="slider" min="0" max="30" value="15" />
+                </div>
+                <div class="row">
+                    <label for="">font size</label>
+                    <input type="number" id="number" value="30" />
+                </div>
+                <div class="row">
+                    <label id="first">font type</label>
+                    <select id="font-type">
+                        <option value="Roboto" selected="selected">Roboto</option>
+                        <option value="Lato">Lato</option>
+                        <option value="Poppins">Poppins</option>
+                        <option value="Open Sans">Open Sans</option>
+                    </select>
+                </div>
+                <table>
+                    <tr>
+                        <td>
+                            <button id="clearButton"><img src="./pictures/trash.png" alt="clear"></button>
+                        </td>
+                        <td>
+                            <button id="pencil"><img src="./pictures/brush.png" alt="brush"></button>
+                        </td>
+                        <td>
+                            <button id="eraser"><img src="./pictures/eraser2.png" alt="eraser"></button>
+                        </td>
+                        <td>
+                            <button id="text"><img src="./pictures/text.png" alt="text"></button>
+                        </td>
+                    </tr>
+                        
+                    <tr>
+                        <td>
+                            <button id="triangle"><img src="./pictures/rounded-triangle.png" alt="triangle"></button>
+                        </td>
+                        <td>
+                            <button id="rectangle"><img src="./pictures/rounded-rectangle.png" alt="rectangle"></button>
+                        </td>
+                        <td>
+                            <button id="star"><img src="./pictures/star.png" alt="star"></button>
+                        </td>
+                        <td>
+                            <button id="hexagon"><img src="./pictures/hexagon.png" alt="hexagon"></button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <button id="circle"><img src="./pictures/rec.png" alt="circle"></button>
+                        </td>
+                        <td>
+                            <button id="line"><img src="./pictures/remove.png" alt="line"></button>
+                        </td>
+                        <td>
+                            <button id="upload"><img src="./pictures/upload.png" alt="upload"></button>
+                            <input type="file" id="input-file">
+                        </td>
+                        <td>
+                            <button id="download"><img src="./pictures/download.png" alt="download"></button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <button id="redo"><img src="./pictures/redo.png" alt="redo"></button>
+                        </td>
+                        <td>
+                            <button id="undo"><img src="./pictures/undo.png" alt="undo"></button>
+                        </td>
+                    </tr>
+                </table>
+                
+            </div>
+        </div>
+        <div class="right">
+            <div id="whiteboard">
+                <canvas id="drawingCanvas"></canvas>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
