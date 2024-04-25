@@ -29,15 +29,12 @@
 
 ### How to use 
 #### brush size 
-![2024-03-31 22 28 37](https://hackmd.io/_uploads/ryCVmxv1R.png =30%x )
 調整筆刷大小
 
 #### font size
-![2024-03-31 22 31 34](https://hackmd.io/_uploads/B1WkVxD1A.png =25%x )
 調整字體大小
 
 #### font type
-![2024-03-31 22 33 37](https://hackmd.io/_uploads/BkcUVxP1R.png =25%x )
 調整字體類型
 
 #### brush ![brush](https://hackmd.io/_uploads/r1J22kPkR.png)
