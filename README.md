@@ -91,9 +91,3 @@ https://web-canvas-c9a92.web.app/
 ### Others (Optional)
 None
 
-
-<style>
-table th{
-    width: 100%;
-}
-</style>
